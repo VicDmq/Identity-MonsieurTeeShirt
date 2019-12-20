@@ -1,0 +1,48 @@
+@import '../variables.less';
+
+.list {
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  max-width: 300px;
+  margin: auto;
+
+  .listItem {
+    display: flex;
+    margin: 10px auto;
+    max-width: 250px;
+    padding: 10px;
+    border: 1px solid @primary-color;
+    border-radius: 4px;
+
+    .id {
+      font-weight: bold;
+    }
+
+    .name {
+      margin-left: 10px;
+    }
+
+    .hexa {
+      margin-left: 10px;
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      .selectButton {
+        background-color: @primary-color;
+        border: none;
+        border-radius: @border-radius;
+        color: white;
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}

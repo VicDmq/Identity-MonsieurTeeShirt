@@ -1,0 +1,29 @@
+@import '../variables.less';
+
+@header-height: 50px;
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: @header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: @primary-color;
+
+  a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .selectedProduct {
+    color: white;
+    margin: 10px;
+  }
+}
+
+.content {
+  padding-top: @header-height;
+}
